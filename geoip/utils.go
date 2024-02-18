@@ -100,6 +100,7 @@ func runTicker() {
 				break
 			}
 			fmt.Println("Updated")
+			DBRaw = dbData
 			DB = db
 		}
 	}()

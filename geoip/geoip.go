@@ -44,6 +44,7 @@ func NewDB() (*geoip2.Reader, error) {
 	if err != nil {
 		return nil, err
 	}
+	DBRaw = dbData
 	runTicker()
 	return db, nil
 }
